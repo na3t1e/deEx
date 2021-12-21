@@ -1,0 +1,3 @@
+insert into productmaterial(ProductID, MaterialID, Cout) 
+select product.ID as ProductID, material.ID as MaterialID, `help`.Kol as Cout from `help` inner join material on `help`.Material = material.Title 
+inner join product on `help`.Product = product.Title
